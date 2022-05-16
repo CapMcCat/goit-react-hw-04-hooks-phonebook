@@ -1,0 +1,8 @@
+.contactInfo {
+  display: inline-block;
+}
+
+.deleteBtn {
+  width: 100px;
+  margin-left: 10px;
+}

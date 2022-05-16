@@ -35,7 +35,11 @@ export const App = () => {
       number,
     };
 
-    if (contacts.find(contact => contact.name === name)) {
+    if (
+      contacts.find(
+        contact => contact.name.toLocaleLowerCase() === name.toLowerCase()
+      )
+    ) {
       alert(`${name} is already in contacts.`);
     } else {
       return setContacts(contacts => [contact, ...contacts]);
